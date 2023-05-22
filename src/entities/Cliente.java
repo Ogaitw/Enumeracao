@@ -2,11 +2,11 @@ package entities;
 
 public class Cliente{
     private String nome;
-    private TIpoCliente tIpoCliente;
+    private tipocliente tIpoCliente;
 
-    public Cliente(String nome, TIpoCliente tIpoCliente) {
+    public Cliente(String nome, tipocliente tipocliente) {
         this.nome = nome;
-        this.tIpoCliente = tIpoCliente;
+        this.tIpoCliente = tipocliente;
     }
 
     public String getNome() {
@@ -17,19 +17,19 @@ public class Cliente{
         this.nome = nome;
     }
 
-    public TIpoCliente gettIpoCliente() {
+    public tipocliente gettIpoCliente() {
         return tIpoCliente;
     }
 
-    public void settIpoCliente(TIpoCliente tIpoCliente) {
-        this.tIpoCliente = tIpoCliente;
+    public void settIpoCliente(tipocliente tipocliente) {
+        this.tIpoCliente = tipocliente;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tIpoCliente=" + tIpoCliente +
+                ", tipoCliente=" + tIpoCliente +
                 '}';
     }
 }
